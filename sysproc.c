@@ -154,3 +154,9 @@ sys_usage(void)
   
   return 0;
 }
+
+int sys_load(void) {
+//  struct system_info *u;
+  cprintf("Hello World.\n");
+  return 0;
+}

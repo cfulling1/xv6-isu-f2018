@@ -1,6 +1,7 @@
 struct stat;
 struct rtcdate;
 struct proc_usage;
+struct system_info;
 
 // system calls
 int fork(void);
@@ -25,6 +26,7 @@ char* sbrk(int);
 int sleep(int);
 int uptime(void);
 int usage(struct proc_usage *);
+int load(struct system_info *);
 
 // ulib.c
 int stat(char*, struct stat*);

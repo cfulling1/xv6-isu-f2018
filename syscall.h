@@ -22,3 +22,4 @@
 #define SYS_close  21
 // ISU-f2018
 #define SYS_usage  22
+#define SYS_load   23
