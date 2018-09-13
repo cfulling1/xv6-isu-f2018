@@ -166,6 +166,7 @@ mkfs: mkfs.c fs.h
 # ISU-f2018 - added some programs - primes, memory, add, fault, mem_huge, my_usage
 UPROGS=\
 	_cat\
+	_convert\
 	_echo\
 	_forktest\
 	_grep\
@@ -254,7 +255,7 @@ qemu-nox-gdb: fs.img xv6.img .gdbinit
 
 # ISU-f2018 - added some source files - primes.c, memory.c, add.c, fault.c, mem_huge.c, my_usage.c
 EXTRA=\
-	mkfs.c ulib.c user.h cat.c echo.c forktest.c grep.c kill.c\
+	mkfs.c ulib.c user.h cat.c convert.c echo.c forktest.c grep.c kill.c\
 	ln.c ls.c mkdir.c\
 	primes.c memory.c add.c fault.c mem_huge.c my_usage.c\
 	rm.c stressfs.c usertests.c wc.c zombie.c\
