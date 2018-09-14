@@ -1,14 +1,15 @@
 /*
 
-Calee Fulling
-Started with: n/a
+Author: Calee Fulling
 Purpose: CS471 HW 2b (xv6 program)
-Program description: takes either just a decimal number or a decimal
-number and a base from the user and converts the number to the different
-base. The new base is defaulted to 2 unless another base is specified by
+
+Takes either just a decimal number or both a decimal number and a base
+from the user and converts the number to the different
+base. The new base is defaulted to 2 unless a base was specified by
 the user.
 
-The base must be greater than 2 and less than 36.
+The base must be less than 36.
+
 */
 
 #include "types.h"

@@ -151,12 +151,31 @@ sys_usage(void)
     proc_dump();
     mem_dump();
   }
-  
   return 0;
 }
 
+/*
 int sys_load(void) {
-//  struct system_info *u;
+  struct system_info *u;
+  if (argptr(0, (char **) &u, sizeof(struct system_info)) < 0)
+    return -1;
   cprintf("Hello World.\n");
+  return 0;
+}
+
+static struct proc* test(void) {
+  struct proc *p;
+  int count = 0;
+  for(p = ptable.proc; p < &ptable.proc[NPROC]; p++)
+    count++;
+}
+*/
+
+int sys_load(void) { // test
+  struct proc *p = myproc();
+  struct system_info *u;
+  if (argptr(0, (char **) &u, sizeof(struct system_info)) < 0)
+    return -1;
+  cprintf(" testing, sz = %d\n", p->sz);
   return 0;
 }

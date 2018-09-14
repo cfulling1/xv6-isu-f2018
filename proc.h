@@ -58,10 +58,11 @@ struct proc_usage {
 
 
 struct system_info {
-  int num_procs;     // total number of processes
-  int uvm_used;      // total amount of memory for all user processes
-  int num_cpus;      // number of CPUs, 2
+  uint num_procs;     // total number of processes
+  uint uvm_used;      // total amount of memory for all user processes
+  uint num_cpus;      // number of CPUs, 2
 };
+
 // Process memory is laid out contiguously, low addresses first:
 //   text
 //   original data and bss
