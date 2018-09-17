@@ -26,7 +26,7 @@ char* sbrk(int);
 int sleep(int);
 int uptime(void);
 int usage(struct proc_usage *);
-int load(struct system_info *);
+int system_load(struct system_info *);
 
 // ulib.c
 int stat(char*, struct stat*);
