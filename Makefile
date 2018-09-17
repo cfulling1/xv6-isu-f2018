@@ -182,7 +182,6 @@ UPROGS=\
 	_add\
 	_fault\
 	_mem_huge\
-	_my_load\
 	_my_usage\
 	_rm\
 	_sh\
@@ -261,7 +260,7 @@ EXTRA=\
 	mkfs.c ulib.c user.h cat.c clear.c convert.c echo.c forktest.c\
 	free.c grep.c kill.c\
 	ln.c ls.c mkdir.c\
-	primes.c memory.c add.c fault.c mem_huge.c my_load.c my_usage.c\
+	primes.c memory.c add.c fault.c mem_huge.c my_usage.c\
 	rm.c stressfs.c usertests.c wc.c zombie.c\
 	printf.c umalloc.c\
 	README dot-bochsrc *.pl toc.* runoff runoff1 runoff.list\

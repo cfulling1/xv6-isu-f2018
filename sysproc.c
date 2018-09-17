@@ -159,7 +159,9 @@ struct {
   struct proc proc[NPROC];
 } ptable;
 
-int sys_system_load(void) { // test
+// Calee Fulling ISU
+
+int sys_system_load(void) {
   struct proc *p;
   struct system_info *u;
 
@@ -170,8 +172,8 @@ int sys_system_load(void) { // test
 
   for (p = ptable.proc; p < &ptable.proc[NPROC]; p++) {
     if (p->state != UNUSED) {
-      u->num_procs++;
-      u->uvm_used += p->sz;
+      u->num_procs++;   // counting number of processes as it goes through
+      u->uvm_used += p->sz; // adding amount of memory as it goes through
     }
   }
 
