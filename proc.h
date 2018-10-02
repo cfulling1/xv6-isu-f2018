@@ -56,6 +56,8 @@ struct proc_usage {
   uint memory_size;
 };
 
+char * p;
+extern int flags;
 
 struct system_info {
   int num_procs;     // total number of processes
@@ -68,3 +70,4 @@ struct system_info {
 //   original data and bss
 //   fixed-size stack
 //   expandable heap
+

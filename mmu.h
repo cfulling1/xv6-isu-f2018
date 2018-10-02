@@ -146,6 +146,10 @@ struct segdesc {
 #define PTE_ADDR(pte)   ((uint)(pte) & ~0xFFF)
 #define PTE_FLAGS(pte)  ((uint)(pte) &  0xFFF)
 
+#define PAGE_DIR_DUMP_POINTER 0x1
+#define PAGE_DIR_DUMP_FREE    0x2
+#define PAGE_DIR_DUMP_TABLES  0X4
+
 #ifndef __ASSEMBLER__
 typedef uint pte_t;
 

@@ -105,6 +105,7 @@ extern int sys_write(void);
 extern int sys_uptime(void);
 extern int sys_usage(void); // ISU-f2018
 extern int sys_system_load(void);
+extern int sys_page_dir_dump(void);
 
 static int (*syscalls[])(void) = {
 [SYS_fork]    sys_fork,
@@ -130,6 +131,7 @@ static int (*syscalls[])(void) = {
 [SYS_close]   sys_close,
 [SYS_usage]   sys_usage, // ISU-f2018
 [SYS_system_load] sys_system_load,
+[SYS_page_dir_dump] sys_page_dir_dump,
 };
 
 void
